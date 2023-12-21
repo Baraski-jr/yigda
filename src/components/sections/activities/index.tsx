@@ -6,14 +6,14 @@ import ImageCard1 from "../../cards/image1";
 
 const Activities = () => {
     return ( 
-        <div className="c-rounded bg-white flex items-center min-h-[100vh] portrait:min-h-[40rem]">    
+        <div id="activities" className="c-rounded bg-white flex items-center min-h-[100vh] portrait:min-h-[40rem] py-8">    
             <div className="container lg:max-w-[80rem] lg:w-[80%] md:w-[95%] w-[90%] mx-auto">
                 <div className="grid lg:grid-cols-2 space-y-4 md:space-y-0">
                     {/* First Column */}
                     <div className="md:w-[90%]">
                         <div className="space-y-1 grid gap-y-2">
                             <div className="">
-                                <h3 className="font-mono font-medium text-md italic text-green-500">Our Mission</h3>
+                                <h3 className="font-mono font-medium text-md italic text-green-500">What we Do</h3>
                             </div>
                             <div className="md:pr-8">
                                 <h1 className="text-2xl lg:text-3xl md:text-2xl font-bold">Get ahead of th game with influencer</h1>

@@ -1,13 +1,13 @@
 const About = () => {
     return ( 
-        <div className="bg-slate-800 min-h-[100vh] portrait:min-h-[40rem] flex items-center">
-            <div className="container lg:max-w-[80rem] lg:w-[80%] md:w-[95%] w-[90%] mx-auto space-y-8  md:space-y-0">
+        <div id="about" className="bg-slate-800 min-h-[100vh] portrait:min-h-[40rem] flex items-center py-8">
+            <div className="container lg:max-w-[80rem] lg:w-[80%] md:w-[95%]  mx-auto space-y-8  md:space-y-0">
                 {/* First Row */} 
                 <div className="grid md:grid-cols-2 space-y-4 md:space-y-0 md:space-x-8">
                     <div className="">
                         <img src="/laptop.png" alt="Laptop" className=" w-full object-cover rounded-t-3xl md:rounded-bl-[5rem] md:rounded-t-2xl h-[18rem] md:h-[25rem]" />
                     </div>
-                    <div className="">
+                    <div className="w-[90%] mx-auto">
                         <div className="space-y-1 md:space-y-2">
                             <h3 className="font-mono font-medium text-md italic text-green-500">Who We Are</h3>
                             <div className="md:pr-12 ">
@@ -19,7 +19,7 @@ const About = () => {
                                 </p>
                             </div>
                             <div className="">
-                                <button className="text-slate-100 font-semibold cursor-pointer bg-pink-900 hover:bg-opacity-90 transition-all duration-300 px-4 py-2 rounded-full">More About Us</button>
+                                <button className="text-slate-100 font-semibold cursor-pointer bg-blue-500 hover:bg-opacity-90 transition-all duration-300 px-4 py-2 rounded-full">More About Us</button>
                             </div>
                         </div>
                     </div>

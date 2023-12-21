@@ -13,7 +13,7 @@ const Contact = () => {
     }
 
     return ( 
-        <div className="md:min-h-[100vh] portrait:min-h-[40rem] flex items-center">
+        <div id="contact" className="md:min-h-[100vh] portrait:min-h-[40rem] flex items-center py-8">
             <div className="container lg:max-w-[80rem] lg:w-[80%] mx-auto space-y-8  md:space-y-8">
 
                 <div className="md:flex md:space-x-10">
@@ -67,28 +67,28 @@ const Contact = () => {
                             <div className="flex justify-between space-x-3">
                                 <div className="w-full">
                                     <label htmlFor="name" className="font-semibold block pb-1">Name</label>
-                                    <input className="border rounded-md px-2 py-1 focus:outline-none w-full" type="text" name="name" id="" placeholder="Omar ..." value={name} onChange={e => setName(e.target.value)}/>
+                                    <input className="rounded-md px-2 py-1 focus:outline-none w-full border-2 focus:border-blue-500" type="text" name="name" id="" placeholder="Omar ..." value={name} onChange={e => setName(e.target.value)}/>
                                 </div>
                                 <div className="w-full">
                                     <label htmlFor="phone" className="font-semibold block pb-1">Phone</label>
-                                    <input className="border px-2 py-1 rounded-md focus:outline-none w-full" type="number" name="number" id="" placeholder="+220 222 2222"  value={phone} onChange={e => setPhone(e.target.value)}/>
+                                    <input className="px-2 py-1 rounded-md focus:outline-none w-full border-2 focus:border-blue-500" type="number" name="number" id="" placeholder="+220 222 2222"  value={phone} onChange={e => setPhone(e.target.value)}/>
                                 </div>
                             </div>
                             <div className="">
                                 <label htmlFor="email" className="font-semibold pb-1">Email</label>
-                                <input className="w-full border px-2 py-1 rounded-md focus:outline-none" type="email" name="email" id="" placeholder="Yigda@gmail.com"  value={email} onChange={e => setEmail(e.target.value)}/>
+                                <input className="w-full px-2 py-1 rounded-md focus:outline-none border-2 focus:border-blue-500" type="email" name="email" id="" placeholder="Yigda@gmail.com"  value={email} onChange={e => setEmail(e.target.value)}/>
                             </div>
                             {/* Send Email */}
                             <div className="">
                                 <label htmlFor="subject" className="font-semibold pb-1">Subject</label>
-                                <input className="w-full border px-2 py-1 rounded-md focus:outline-none" type="text" name="subject" id="" placeholder="want to join" />
+                                <input className="w-full px-2 py-1 rounded-md focus:outline-none border-2 focus:border-blue-500" type="text" name="subject" id="" placeholder="want to join" />
                             </div>
                             <div className="">
                                 <label htmlFor="message" className="font-semibold pb-1">Message</label>
-                                <textarea className="border px-2 rounded-md w-full focus:outline-none" rows={3} placeholder="I want ...." value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                                <textarea className=" px-2 rounded-md w-full focus:outline-none border-2 focus:border-blue-500" rows={3} placeholder="I want ...." value={message} onChange={e => setMessage(e.target.value)}></textarea>
                             </div>
                             <div className="">
-                                <button type="submit" className="rounded-full text-white font-semibold py-2 bg-slate-500 w-full">Send Message</button>
+                                <button type="submit" className="rounded-full text-white font-semibold py-2 bg-blue-500 hover:bg-opacity-80 w-full transition-all duration-300">Send Message</button>
                             </div>
                         </form>
                     </div>

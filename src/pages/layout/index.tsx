@@ -4,7 +4,7 @@ import Header from "../../components/sections/header";
 
 const Layout = () => {
     return ( 
-        <div className="">
+        <div className="relative">
             <Header />
             <Outlet />
             <Footer />

@@ -34,16 +34,16 @@ const Footer = () => {
                             </div>
                             <div className=""> 
                                 <div className="">
-                                    <Link className="" to={"/"}>Home</Link>
+                                    <a href="#hero" className="">Home</a>
                                 </div>
                                 <div className="">
-                                    <Link className="" to={"/"}>About Us</Link>
+                                    <a href="#about" className="">About Us</a>
                                 </div>
                                 <div className="">
-                                    <Link className="" to={"/"}>Activities</Link>
+                                    <a href="#activities" className="">Activities</a>
                                 </div>
                                 <div className="">
-                                    <Link className="" to={"/"}>Contact Us</Link>
+                                    <a href="#contact" className="">Contact Us</a>
                                 </div>
                             </div>
                         </div>

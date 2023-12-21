@@ -2,22 +2,21 @@ import ImageCard from "../../cards/image";
 
 const Hero = () => {
     return ( 
-        <div className="bg-[#E6F0F9] min-h-[90vh] portrait:min-h-[40rem] flex items-center pb-12 relative -z-20">
+        <div id="hero" className="bg-[#E6F0F9] min-h-[100vh] portrait:min-h-[40rem] flex items-center relative -z-20">
             {/* background design image */}
-            <div className="bg-[#002745] w-[40rem] h-[40rem] absolute right-0 rotate-[35deg] translate-x-[22rem]">
-
-            </div>
+            <div className="hidden md:block bg-[#002745] w-[40rem] rounded-[5rem] h-[55rem] absolute right-0 -top-[14.5rem] rotate-[30deg] translate-x-[25rem]"></div>
+            <div className="md:hidden bg-[#002745] w-[25rem] h-[35rem] rounded-[5rem] absolute right-0 -top-[2rem] rotate-[28deg] z-10 translate-x-[15rem]"></div>
             {/*  */}
-            <div className="md:flex justify-between gap-x-3 container lg:max-w-[80rem] lg:w-[90%] md:w-[95%] w-[90%] mx-auto">
+            <div className="md:grid grid-cols-2 z-10 gap-x-3 items-center container lg:max-w-[80rem] lg:w-[90%] md:w-[95%] w-[90%] mx-auto">
                 {/* First Column */}
-                <div className="pr-10 w-fit space-y-3 w-">
-                    <div className="font-bold text-4xl">
+                <div className="pr-10 space-y-3 text-slate-500">
+                    <div className="font-bold text-3xl md:text-6xl">
                         <h1 className="">Different Faiths</h1>
                         <h1 className="">Common Goal.</h1>
                     </div>
-                    <div className="text-slate-800 font-semibold text-xl pb-6">
+                    <div className="md:text-slate-800 text-slate-500 font-semibold text-xl pb-6">
                         <p className="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda sapiente vel odit officia error, autem nesciunt. Laudantium, molestiae hic.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
                     </div>
                     <div className="">
@@ -25,7 +24,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* Right Column Image */}
-                <div className="">
+                <div className="hidden md:block">
                     <ImageCard />
                 </div>
             </div>

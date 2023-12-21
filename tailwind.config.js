@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'vid': "url('/team.jpg')"
+        'vid': "url('/Team.png')",
       }
     },
   },
