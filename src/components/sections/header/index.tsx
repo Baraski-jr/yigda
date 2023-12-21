@@ -1,19 +1,31 @@
 // import { CiMenuFries } from "react-icons/ci";
 // import { IoIosClose } from "react-icons/io";
+import { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 
 const Header = () => {
+
+    const [stick, setStick ] = useState<boolean>(false)
+    const scroll = () => {
+        if(window.scrollY >= 90) {
+            setStick(true);
+        }
+        else {
+            setStick(false)
+        }
+    }
+    window.addEventListener('scroll', scroll)
     return ( 
-        <div className="py-4 w-full fixed">
+        <div className={stick ? "py-4 w-full bg-slate-200 fixed z-50" : "py-4 w-full fixed"}>
             <div className="flex items-center justify-between container w-[90%] mx-auto">
                 <div className="text-2xl font-bold text-white md:text-slate-700">
                     <h3 className="">YigDa</h3>
                 </div>
                 <div className=" text-white text-2xl font-bold md:hidden">
                     {/* <CiMenuFries /> */}
-                    <HiMenuAlt3 />
+                    <HiMenuAlt3 /> 
                     {/* <IoIosClose /> */}
                 </div>
                 <nav className="md:flex items-center justify-between gap-x-10 hidden">

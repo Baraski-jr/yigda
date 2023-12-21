@@ -2,7 +2,7 @@ import { FaPlayCircle } from "react-icons/fa";
 
 const Video = () => {
     return ( 
-        <div className=" h-[20vh] md:h-[50vh] portrait:h-[25rem] relative bg-vid hue-rotate-50 bg-no-repeat bg-cover bg-left-top bg-origin-border		">
+        <div className=" h-[20vh] md:h-[50vh] portrait:h-[25rem] relative bg-vid hue-rotate-50 bg-no-repeat bg-cover bg-left-top bg-origin-border">
             <div className="">
                 <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500 opacity-60 md:h-[50vh] portrait:h-[25rem] w-full absolute"></div>
             </div>
