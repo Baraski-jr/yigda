@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .c-rounded {
     border-radius: 0% 0% 49% 48% / 25% 25% 9% 12%;
 }
